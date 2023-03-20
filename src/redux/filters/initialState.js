@@ -1,8 +1,8 @@
-const initialState = [
+const filterInitialState = [
     {
         status: 'All',
         colors: [],
     },
 ];
 
-export default initialState;
+export default filterInitialState;

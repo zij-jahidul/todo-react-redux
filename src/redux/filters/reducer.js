@@ -1,4 +1,4 @@
-import { initialState } from "./initialState";
+import initialState from "./initialState";
 import { STATUSCHANGED, COLORCHANGED } from './actionTypes';
 
 const filterReducer = (state = initialState, action) => {
@@ -27,10 +27,9 @@ const filterReducer = (state = initialState, action) => {
                         ...state,
                         colors: state.colors.filter(existingColor => existingColor !== color)
                     }
-
-
+                
                 default:
-                    state;
+                    return state;
             }
         
         default:
